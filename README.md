@@ -9,10 +9,19 @@
 - Kotlin 1.5.31
 - Spring Batch 2.5.6
 - Spring Data JPA 2.5.6
+- QueryDSL
 - H2 Database
 
-### Trouble-Shooting
+---
 
+### Spring Batch `with QueryDSL`
+- `JpaPagingItemReader` 인터페이스에서 Native Query 가 아닌 QueryDSL 를 활용하여 SQL 문 작성
+- Native Query 의 Typed-Safe 하지 못한 단점을 보완 
+- 참고 글 : [우아한형제들 기술블로그 - "Spring Batch 와 Querydsl"](https://techblog.woowahan.com/2662/)
+
+---
+
+### Trouble-Shooting
 #### H2 Database 설치 후 연동 문제
 - H2 Console 접속할 때와 프로젝트 Properties 설정할 때의 접속 URL 차이 확인
 - H2 Console 에서 `jdbc:h2:~/데이터베이스명` 으로 DB 생성

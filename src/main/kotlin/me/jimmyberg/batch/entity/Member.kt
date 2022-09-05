@@ -13,6 +13,7 @@ data class Member(
     @Id
     val id: Long? = null,
     val name: String,
-    val age: Long
+    val age: Long,
+    var nickName: String? = null
 
 )

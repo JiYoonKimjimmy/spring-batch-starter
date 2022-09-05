@@ -11,7 +11,8 @@ import org.springframework.test.context.junit4.SpringRunner
 @DataJpaTest(showSql = true)
 class TestApiServiceTest {
 
-    @Autowired lateinit var memberRepository: MemberRepository
+    @Autowired
+    lateinit var memberRepository: MemberRepository
 
     @Test
     fun saveMember() {
